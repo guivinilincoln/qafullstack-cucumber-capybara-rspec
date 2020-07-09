@@ -37,7 +37,6 @@
   ![Cmder](https://i.ibb.co/KVvCRBT/image-20200709161301338.png)
 
 -  Utilizar o comando `bundle init` , esse comando ira criar um arquivo chamado  Gemfile, esse arquivo é onde iremos adicionar as "gems" nossas dependências do projeto.  
-
   ![GemFile](https://i.ibb.co/PYhPWhn/image-20200709162321483.png)
 
 - Após adicionar as dependências e salvar, voltar para o Cmder e utilizar o comando,  `bundle install` esse comando ira baixar todas nos dependências.
