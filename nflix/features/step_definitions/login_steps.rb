@@ -1,8 +1,7 @@
 Quando('eu faço login com {string} e {string}') do |email, senha|
-    visit "/login"
-    find("#emailId").set email # # = Id
-    find("#passId").set senha
-    click_button "Entrar"
+    @login = LoginPage.new
+    @login.go
+    @login.with(email, senha) #faz login com email e senha
   end
   
   Então('devo ser autenticado') do
@@ -11,7 +10,17 @@ Quando('eu faço login com {string} e {string}') do |email, senha|
     expect(toke.length).to be 147
   end
   
-  Então('devo ver {string} na área logada') do |usuario|
-    user = find('.sidebar-wrapper .user .info span')
-    expect(user.text).to eql expect_name
+  E('devo ver {string} na área logada') do |usuario|
+    expect(@sidebar.loggerd_user).to eql expect_name #usando o hooks para instanciar a classe
+  end
+
+  Então('não devo ser autenticado') do
+    js_script = ' return window.localStorage.getItem("default_auth_token");'
+    token = page.execute_script(js_script)
+    expect(token).to be nil #espera um token null
+  end
+  
+  E('devo ver a mensagem de alerta {string}') do |mensagem|
+    @login = LoginPage.new
+    expect( @login.alert).to eql mensagem
   end

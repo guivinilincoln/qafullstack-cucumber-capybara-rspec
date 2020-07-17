@@ -11,8 +11,22 @@ Funcionalidade: Login
         Então devo ser autenticado
         E devo ver "Tony Stark" na área logada
 
+@login_test
+    Esquema do Cenario:  Login sem sucesso
+         Quando eu faço login com <email> e <senha>
+         Então não devo ser autenticado
+         E devo ver a mensagem de alerta <mensagem>
 
-    Cenario: Acesso 
+         Exemplos:
+         |email             |senha     |texto                           |
+         | "tony@stack.com" | "111111" | "Usuario e/ou senha inválida"  |
+         | "404@gmail.com"  | "abc123" | "Usuario e/ou senha inválida"  |
+         | "             "  | "abc123" | "Opps.. Cadê o email?"         |
+         | "404@gmail.com"  | " "      | "Opps.. Cadê o senha??"        |
+
+
+
+    Cenario: Senha inválida
         Quando eu faço login com "tony@stack.com" e "111111"
         Então não devo ser autenticado
         E devo ver a mensagem de alerta "Usuario e/ou senha inválida"
