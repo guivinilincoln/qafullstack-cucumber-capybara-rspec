@@ -1,13 +1,12 @@
+#StepDefinitions não deve conter logica
+
 Quando('eu faço login com {string} e {string}') do |email, senha|
-    @login = LoginPage.new
-    @login.go
-    @login.with(email, senha) #faz login com email e senha
+    @login_page.go
+    @login_page.with(email, senha) #faz login com email e senha
   end
   
   Então('devo ser autenticado') do
-    js_script = ' return window.localStorage.getItem("default_auth_token");'
-    token = page.execute_script(js_script)
-    expect(toke.length).to be 147
+    expect(get_token).to be 147
   end
   
   E('devo ver {string} na área logada') do |usuario|
