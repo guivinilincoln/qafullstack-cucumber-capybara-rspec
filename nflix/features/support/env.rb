@@ -1,7 +1,9 @@
 require 'capybara'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
-require_relative "helper" 
+require 'os'
+
+require_relative "helpers" 
 
 World(Helpers) #faz com que eu possa acessar os helpers em qualquer ligar do porjeto
 

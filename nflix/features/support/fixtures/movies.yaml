@@ -22,3 +22,43 @@ jocker:
   cast: ["Joaquin Phoenix"]
   overview: "O comediante falido Arthur Fleck encontra violentos bandidos pelas ruas de Gotham City."
   cover: "coringa.jpg"
+no-title:
+  title: ""
+  status: "Disponivel"
+  year: 2020
+  release_date: "01/12/2020"
+  cast: []
+  overview: ""
+  cover: ""
+no-status:
+  title: "Coringa 2"
+  status: ""
+  year: 2020
+  release_date: "01/12/2020"
+  cast: []
+  overview: ""
+  cover: ""
+no-year:
+  title: "Coringa 2"
+  status: "Disponivel"
+  year: 
+  release_date: "01/12/2020"
+  cast: []
+  overview: ""
+  cover: ""
+no-release_date:
+  title: "Coringa 2"
+  status: "Disponivel"
+  year: 2020
+  release_date: ""
+  cast: []
+  overview: ""
+  cover: ""
+existing_title:
+  title: "Coringa"
+  status: "Em breve"
+  year: 2019
+  release_date: "01/12/2020"
+  cast: ["Joaquin Phoenix"]
+  overview: "O comediante falido Arthur Fleck encontra violentos bandidos pelas ruas de Gotham City."
+  cover: "coringa.jpg"
