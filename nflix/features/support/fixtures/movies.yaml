@@ -22,6 +22,22 @@ jocker:
   cast: ["Joaquin Phoenix"]
   overview: "O comediante falido Arthur Fleck encontra violentos bandidos pelas ruas de Gotham City."
   cover: "coringa.jpg"
+dbz:
+  title: "Dragon Ball Evolution"
+  status: "Disponivel"
+  year: 2009
+  release_date: "01/12/2009"
+  cast: []
+  overview: ""
+  cover: "dbz.jpg"
+10_coisas:
+  title: "10 coisas que eu odeio em voce"
+  status: "Disponivel"
+  year: 1999
+  release_date: "01/12/1999"
+  cast: []
+  overview: ""
+  cover: "10_coisas.jpg"
 no-title:
   title: ""
   status: "Disponivel"
@@ -62,3 +78,4 @@ existing_title:
   cast: ["Joaquin Phoenix"]
   overview: "O comediante falido Arthur Fleck encontra violentos bandidos pelas ruas de Gotham City."
   cover: "coringa.jpg"
+  

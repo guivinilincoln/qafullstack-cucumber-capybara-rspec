@@ -52,10 +52,29 @@ class MoviePage
        find("#create-movie").click
     end 
 
-    def movie_tr(movie)
-        find('table tbody tr', text: movie['title'])
+    def movie_tr(title)
+        find('table tbody tr', text: title)
     end
 
+    def remove(title)
+        movie_tr(title).find(".btn-trash").click
+    end
 
+    def confirmaExclusao
+        find(".swal2-confirm").click
+    end
 
+    def cancelaExclusao
+        find(".swal2-cancel").click
+    end
+
+    def naoExisteFilmeNaTela(title)
+        page.has_no_css?("table tbody tr" , text: title) #has_no_css = não deve conter
+    end
+    
+    def existeFilmeNaTela(title)
+        page.has_no_css?("table tbody tr" , text: title) #has_no_css = não deve conter
+    end
+
+    
 end

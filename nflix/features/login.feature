@@ -1,4 +1,4 @@
-#language: pt
+#language:pt
 
 Funcionalidade: Login
     Para que eu possa gerenciar os filmes do catálogo NinjaFlix

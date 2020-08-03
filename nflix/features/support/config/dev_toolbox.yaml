@@ -1,0 +1,11 @@
+---
+url: "http://localhost:8080/"
+database: 
+    host: "10.0.0.1"
+    dbname: "nflix"
+    user: "postgres"
+    password: "qaninja-hng"
+users:
+    cat_manager:
+        login: "tony@stark.com"
+        pass: "pwd123"

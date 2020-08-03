@@ -21,7 +21,7 @@ Funcionalidade: Cadastro de filmes
             | "jocker"   |
 
     @cadastro_invalido
-    Cenario: Campos obrigatórios
+    Esquema do Cenario: Campos obrigatórios
         O gestor de catálogo tenta cadastrar um novo filme, mas esquece
         de preencher um dos campos que são obrigatórios, em seguida, o sistema
         exibe um notificação para o usuário.
